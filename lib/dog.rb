@@ -2,7 +2,6 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
-    @@names_only << self.name
   end
 
   @@all = []
