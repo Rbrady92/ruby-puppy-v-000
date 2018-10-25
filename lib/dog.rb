@@ -1,0 +1,19 @@
+class Dog
+  def initialize(name)
+    @name = name
+    @@all << self.name
+  end 
+
+  @@all = []
+
+  attr_accessor :name
+
+  def self.all
+    @@all.each {|curr| puts "#{curr}"}
+  end 
+  
+  def self.clear_all
+    @@all.clear
+  end 
+
+end 
